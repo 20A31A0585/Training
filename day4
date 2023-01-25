@@ -1,0 +1,83 @@
+
+l=[5]*5
+print(l)
+
+output:
+
+[5, 5, 5, 5, 5]
+
+#packages
+
+import filename
+from filename import function
+print(filename.function())
+
+class Student: 
+    name="" 
+    roll_number="" 
+    branch="" 
+    marks=0 
+    attendence=0.0                           #self is keyword that defines the method is belong to the class 
+    is_using_transport=False                 #constructor is used to give the default values for the class members 
+    def view_attendence(self): 
+    def view_marks(self): 
+    def view_profile(self): 
+    def update_name(self,new_name):
+
+Task1:
+
+class Student:
+    student_name="xy"
+    def __init__(self,name):
+        print('object is created')
+        print(name)
+        print(self.student_name)
+        self.student_name=name
+        print(self.student_name)
+    def update_name(self,new_name):
+        self.student_name=new_name
+s1=Student('Sandhya')
+s2=Student('Tanuja')
+print(s1.student_name)
+s1.update_name('Tanuja Sandhya')
+print(s1.student_name)
+
+output:
+
+object is created
+Sandhya
+xy
+Sandhya
+object is created
+Tanuja
+xy
+Tanuja
+Sandhya
+Tanuja Sandhya
+
+Task:2
+
+class Bank:
+    Account_number=0
+    name=""
+    branch=""
+    ifsc=0
+    def __init__(self,acc_no,name,branch,ifsc):
+        self.Account_number=acc_no
+        self.name=name
+        self.branch=branch
+        self.ifsc=ifsc
+    
+b1=Bank(585,'Tanuja','Gandhinagar',21246)
+print(b1.Account_number)
+print(b1.name)
+print(b1.branch)
+print(b1.ifsc)
+
+output:
+
+585
+Tanuja
+Gandhinagar
+21246
+S
